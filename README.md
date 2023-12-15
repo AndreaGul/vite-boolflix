@@ -11,4 +11,15 @@ Predisponendo gli elementi del proggetto rispetto ai componenti futuri ci creaia
 
 Inoltre creiamo un file Store.js per eventuali passaggi di dati tra i componenti padre e figlio.
 
+Stabilita la struttura base possiamo istanziare i componenti utili per la milestone 1
+
+Creiamo un componente che al suo interno conterra la serachbar composta da un input e un bottone
+
+Milestone 1:
+Creare un layout base con una searchbar (una input e un button) in cui possiamo scrivere completamente o parzialmente il nome di un film. Possiamo, cliccando il  bottone, cercare sull’API tutti i film che contengono ciò che ha scritto l’utente.
+Vogliamo dopo la risposta dell’API visualizzare a schermo i seguenti valori per ogni film trovato: 
+Titolo
+Titolo Originale
+Lingua
+Voto
 
