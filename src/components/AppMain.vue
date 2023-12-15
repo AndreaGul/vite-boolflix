@@ -18,8 +18,8 @@ export default {
   },
 
   methods: {
-    searchFilm(){
-      axios.get(this.store.apiUrl + '&query=' + this.store.searchKey).then((response) => {
+    searchFilm(event){
+      axios.get(this.store.apiUrl + '&query=' + event).then((response) => {
         this.store.SearchedFilm = response.data.results
         console.log( response.data.results)
       })
