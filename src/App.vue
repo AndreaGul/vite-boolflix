@@ -1,17 +1,21 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 export default {
-  name: 'DefaultTemplate',
+  name: 'App',
 
-  data() {
-    return {
-      text: 'Template VueJS',
-    };
-  },
+  components: {
+    AppHeader,
+    AppMain,
+  }
+  
 };
 </script>
 
 <template>
-  <h1>{{ text }}</h1>
+  <AppHeader/>
+  <AppMain/>
+ 
 </template>
 
 <style scoped lang="scss"></style>
