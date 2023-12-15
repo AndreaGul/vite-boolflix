@@ -1,6 +1,5 @@
 <script>
 
-
 export default {
   name: 'AppMainSearchFilmList',
 
@@ -21,3 +20,4 @@ export default {
 </template>
 
 <style scoped lang="scss"></style>
+

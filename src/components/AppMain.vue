@@ -4,6 +4,8 @@ import axios from 'axios';
 import { store } from '../store';
 
 import AppMainSearch from './AppMainSearch.vue';
+import AppMainFilmList from './AppMainFilmList.vue';
+
 export default {
   name: 'AppMain',
 
@@ -15,6 +17,7 @@ export default {
 
   components: {
     AppMainSearch,
+    AppMainFilmList,
   },
 
   methods: {
@@ -34,7 +37,19 @@ export default {
 <template>
   <main>
     <AppMainSearch @search="searchFilm"/>
+    <ul>
+      <AppMainFilmList 
+      v-for="film in this.store.SearchedFilm"
+      :title="film.title"
+      :titleOriginal=" film.original_title"
+      :lang="film.original_language"
+      :vote="film.vote_average"/>
+    </ul>
+    
   </main>
+
+  
+  
  
 </template>
 

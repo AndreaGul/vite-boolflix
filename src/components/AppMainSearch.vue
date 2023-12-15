@@ -1,6 +1,6 @@
 <script>
 import { store } from '../store';
-import AppMainSearchFilmList from './AppMainSearchFilmList.vue';
+
 
 export default {
   name: 'AppMainSearch',
@@ -8,9 +8,10 @@ export default {
   data() {
     return {
         store,
-        AppMainSearchFilmList,
+        
     }
   },
+  
   
 
 };
@@ -25,30 +26,7 @@ export default {
     
   </div>
 
-  <ul>
-    
-    <li v-for="film in this.store.SearchedFilm ">
-        <ul>
-            <li>Titolo del film: {{ film.title  }}</li>
-            <li>Titolo Originale: {{ film.original_title  }}</li>
-            <li>Lingua originale:{{ film.original_language }} </li>
-            <li>Voto medio: {{ film.vote_average }}</li>
-        </ul>
-    </li>
-
-   
-      
-      <!-- <AppMainSearchFilmList
-      v-for="film in this.store.SearchedFilm"
-      :title="film.title"
-      :titleOriginal=" film.original_title"
-      :lang="film.original_language"
-      :vote="film.vote_average"
-      />
-      -->
   
-  </ul>
- 
 </template>
 
 <style scoped lang="scss"></style>
