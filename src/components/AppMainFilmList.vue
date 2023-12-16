@@ -8,14 +8,14 @@ export default {
 </script>
 
 <template>
-   <li>
+   
          <ul>
             <li>Titolo del film: {{ title  }}</li>
             <li>Titolo Originale: {{ titleOriginal }}</li>
             <li>Lingua originale:{{ lang }} </li>
             <li>Voto medio: {{ vote }}</li>
         </ul>
-    </li>
+    
        
 </template>
 

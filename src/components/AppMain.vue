@@ -15,6 +15,8 @@ export default {
     }
   },
 
+  emits: ['search'],
+
   components: {
     AppMainSearch,
     AppMainFilmList,
@@ -22,7 +24,12 @@ export default {
 
   methods: {
     searchFilm(event){
-      axios.get(this.store.apiUrl + '&query=' + event).then((response) => {
+      axios.get(this.store.apiUrl,{ 
+        params: {
+          api_key: this.store.apiKey,
+          query: event,
+        }
+      } ).then((response) => {
         this.store.SearchedFilm = response.data.results
         console.log( response.data.results)
       })
@@ -38,12 +45,15 @@ export default {
   <main>
     <AppMainSearch @search="searchFilm"/>
     <ul>
+    <li v-for="film in this.store.SearchedFilm">
       <AppMainFilmList 
-      v-for="film in this.store.SearchedFilm"
+      
       :title="film.title"
       :titleOriginal=" film.original_title"
       :lang="film.original_language"
       :vote="film.vote_average"/>
+    </li>
+      
     </ul>
     
   </main>
