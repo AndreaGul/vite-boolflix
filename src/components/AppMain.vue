@@ -6,7 +6,7 @@ import { store } from '../store';
 import AppMainSearch from './AppMainSearch.vue';
 import AppMainFilmList from './AppMainFilmList.vue';
 
-export default {
+export default { 
   name: 'AppMain',
 
   data(){
@@ -15,8 +15,7 @@ export default {
     }
   },
 
-  emits: ['search'],
-
+ 
   components: {
     AppMainSearch,
     AppMainFilmList,
@@ -33,7 +32,10 @@ export default {
         this.store.SearchedFilm = response.data.results
         console.log( response.data.results)
       })
-    }
+    },
+
+
+    
   },
 
   
