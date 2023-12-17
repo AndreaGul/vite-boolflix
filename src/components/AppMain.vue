@@ -82,7 +82,8 @@ export default {
         :title="film.title"
         :titleOriginal=" film.original_title"
         :lang="film.original_language"
-        :vote="film.vote_average"/>
+        :vote="film.vote_average"
+        :poster="film.backdrop_path"/>
       </li>
 
       <li v-if="this.store.searchedSeries.length"><h2>Series</h2></li>
@@ -92,7 +93,9 @@ export default {
         :title="series.name"
         :titleOriginal=" series.original_name"
         :lang="series.original_language"
-        :vote="series.vote_average"/>
+        :vote="series.vote_average"
+        :poster="series.backdrop_path"
+        />
       </li>
       
     </ul>
