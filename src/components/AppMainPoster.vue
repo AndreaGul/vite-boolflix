@@ -1,6 +1,6 @@
 <script>
 
-import { store } from '../store';
+// import { store } from '../store';
 
 
 export default {
@@ -13,9 +13,9 @@ export default {
     }
   },
 
-  components: {
-    store,
-  },
+//   components: {
+//     store,
+//   },
 
   props: ['locandina','name'],
   

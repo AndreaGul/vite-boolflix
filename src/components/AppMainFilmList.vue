@@ -3,6 +3,7 @@
 
 import AppMainLangFlag from './AppMainLangFlag.vue';
 import AppMainPoster from './AppMainPoster.vue'
+import AppMainStarVote from './AppMainStarVote.vue';
 
 export default {
   name: 'AppMainSearchFilmList',
@@ -17,6 +18,7 @@ export default {
   components: {
     AppMainLangFlag,
     AppMainPoster,
+    AppMainStarVote,
     
   },
   
@@ -38,6 +40,7 @@ export default {
             <li>Titolo Originale: {{ titleOriginal }}</li>
             <li><AppMainLangFlag :language="lang"/></li>
             <li>Voto medio: {{ vote }}</li>
+            <li><AppMainStarVote :starVote="vote"/></li>
             <li><AppMainPoster :locandina="poster" :name="titleOriginal" /></li>
           
            
