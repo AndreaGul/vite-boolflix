@@ -49,9 +49,15 @@ export default {
 
 <template>
   <header class="d-flex justify-content-between align-items-center p-3">
-    <h2>BoolFlix</h2>
+    <h2 class="m-0">BoolFlix</h2>
     <AppHeaderSearch @search="searchFilmESeries" />
   </header>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use '../assets/scss/partial/variables.scss' as *;
+h2 {
+  color: $primary-color-logo;
+  font-size: 40px;
+}
+</style>
