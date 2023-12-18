@@ -12,8 +12,10 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
+  <body>
+    <AppHeader />
+    <AppMain />
+  </body>
 </template>
 
 <style scoped lang="scss"></style>

@@ -48,7 +48,10 @@ export default {
 </script>
 
 <template>
-  <AppHeaderSearch @search="searchFilmESeries" />
+  <header class="d-flex justify-content-between align-items-center p-3">
+    <h2>BoolFlix</h2>
+    <AppHeaderSearch @search="searchFilmESeries" />
+  </header>
 </template>
 
 <style scoped lang="scss"></style>
