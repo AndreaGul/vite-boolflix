@@ -6,6 +6,10 @@ COMMON
 
 @use './variables' as *;
 
+body {
+  height: 100vh;
+}
+
 header {
   background-color: $primary-color-bg;
 }
