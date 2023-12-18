@@ -4,31 +4,21 @@ export default {
 
   props: ['starVote'],
 
-  data(){
-    return{
-        numberOfStars: Math.floor(this.starVote/2),
-    }
+  data() {
+    return {
+      numberOfStars: Math.floor(this.starVote / 2),
+    };
   },
-
-
-  methods: {
-    stars(n){
-
-        if(n > this.numberOfStars){
-            return 'b'
-        }else{
-            return  'a'
-        }
-        
-    }
-  }
-}
+};
 </script>
 
 <template>
-        <span v-for="n in 5">
-            {{ stars(n) }}
-        </span>
+  <span v-for="n in 5">
+    <span v-if="n > this.numberOfStars">
+      <font-awesome-icon icon="fa-regular fa-star" />
+    </span>
+    <span v-else><font-awesome-icon icon="fa-solid fa-star" /></span>
+  </span>
 </template>
 
 <style scoped lang="scss"></style>
