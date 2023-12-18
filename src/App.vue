@@ -7,15 +7,13 @@ export default {
   components: {
     AppHeader,
     AppMain,
-  }
-  
+  },
 };
 </script>
 
 <template>
-  <AppHeader/>
-  <AppMain/>
- 
+  <AppHeader />
+  <AppMain />
 </template>
 
 <style scoped lang="scss"></style>
