@@ -1,6 +1,10 @@
 import { createApp } from 'vue';
 //file di partenza stili progetto
-import './assets/scss/style.scss';
+// Import our custom CSS
+import './style.scss';
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap';
 //file di partenza Vue
 import App from './App.vue';
 
