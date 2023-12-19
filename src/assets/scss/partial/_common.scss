@@ -12,5 +12,9 @@ body {
 }
 
 header {
-  background-color: $primary-color-bg;
+  background-color: $primary-color-bg-header;
+}
+
+main {
+  background-color: $primary-color-bg-main;
 }

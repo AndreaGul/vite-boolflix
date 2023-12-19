@@ -14,15 +14,29 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="container-fluid img-container p-0">
     <img
-      class="container-fluid"
       v-if="this.locandina !== null"
       :src="this.store.apiImgUrl + this.locandina"
       :alt="name"
     />
-    <div v-else>Nessuna locandina</div>
+    <img v-else src="../assets/img/image-not-foud.png" alt="Image not found" />
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.img-container {
+  height: 100%;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 100%;
+
+    object-fit: cover;
+    display: inline-block;
+  }
+}
+</style>

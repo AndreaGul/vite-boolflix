@@ -34,10 +34,9 @@ export default {
         />
       </li>
 
-      <li v-if="this.store.searchedSeries.length"><h2>Series</h2></li>
       <li
         v-for="series in this.store.searchedSeries"
-        class="col-12 col-sm-4 col-lg-3 col-xl-2"
+        class="col-12 col-sm-4 col-lg-3 col-xl-2 g-3"
       >
         <AppMainFilmList
           :title="series.name"
@@ -51,9 +50,4 @@ export default {
   </main>
 </template>
 
-<style scoped lang="scss">
-li {
-  border: red solid 2px;
-  height: 350px;
-}
-</style>
+<style scoped lang="scss"></style>
