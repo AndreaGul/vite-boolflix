@@ -20,9 +20,11 @@ export default {
 
 <template>
   <main>
-    <ul>
-      <li v-if="this.store.searchedFilm.length"><h2>Film</h2></li>
-      <li v-for="film in this.store.searchedFilm">
+    <ul class="container-fluid row m-0 g-0">
+      <li
+        v-for="film in this.store.searchedFilm"
+        class="col-12 col-sm-4 col-lg-3 col-xl-2 g-3"
+      >
         <AppMainFilmList
           :title="film.title"
           :titleOriginal="film.original_title"
@@ -33,7 +35,10 @@ export default {
       </li>
 
       <li v-if="this.store.searchedSeries.length"><h2>Series</h2></li>
-      <li v-for="series in this.store.searchedSeries">
+      <li
+        v-for="series in this.store.searchedSeries"
+        class="col-12 col-sm-4 col-lg-3 col-xl-2"
+      >
         <AppMainFilmList
           :title="series.name"
           :titleOriginal="series.original_name"
@@ -46,4 +51,9 @@ export default {
   </main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+li {
+  border: red solid 2px;
+  height: 350px;
+}
+</style>
