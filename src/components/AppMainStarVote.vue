@@ -14,7 +14,7 @@ export default {
 
 <template>
   <span v-for="n in 5">
-    <span v-if="n > this.numberOfStars">
+    <span v-if="n > numberOfStars">
       <font-awesome-icon icon="fa-regular fa-star" />
     </span>
     <span v-else><font-awesome-icon icon="fa-solid fa-star" /></span>

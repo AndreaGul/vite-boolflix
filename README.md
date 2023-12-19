@@ -18,3 +18,5 @@ rendere piu' accativante la descrizione del film e serie
 aggiungere un animazione alla card crazie a prespective
 
 aggiungere la possibilita di scegliere di mostrare film o serie indidualemente e contemporaneamente
+
+aggiungere chatch alla chiamata axios
